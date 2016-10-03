@@ -5,4 +5,4 @@ function printBill(input) {
         .reduce((a,b) => a + b);
     console.log(`You purchased ${items.join(', ')} for a total sum of${sum}`);
 }
-printBill(['Cola','1.35', 'Pancakes', '2.88']);
+printBill(['Cola','1.35', 'Pancakes', '2.90']);
