@@ -9,4 +9,5 @@ function parseTownsToJSON(towns) {
     }
     return JSON.stringify(townsArr);
 }
+
 console.log(parseTownsToJSON(['|Town|Lat|Lng|', '|Sofia |42|23|']));
