@@ -9,8 +9,8 @@ GitHub username:
 <input type="text" id="username" value="testnakov" />
 <button onclick="loadRepos()">Load Repos</button>
 <ul id="repos"></ul>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
-
     function loadRepos() {
         $("#repos").empty();
         let url = "https://api.github.com/users/" +
@@ -27,13 +27,11 @@ GitHub username:
                 $("#repos").append($('<li>').append(link));
             }
         }
-
-        function displayError(error) {
-            $("#repos").append($("<li>Error</li>"));
+        function displayError(err) {
+            $("#repos").append($("<li>" + JSON.parse(err.responseText).message + "</li>"));
         }
     }
 </script>
-
 
 </body>
 </html>
