@@ -22,6 +22,7 @@ function attachEvents() {
         }
     }
 
+	
     function getLocationReport(code) {
         let currentConditions = $.get({
             url: apiUrl + '/forecast/today/' + code + '.json'
