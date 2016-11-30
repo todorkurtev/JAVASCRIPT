@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Prodavachnik</title>
-    <script src="scripts/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="scripts/prodavachnik.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/prodavachnik.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 </head>
 
-<body>
+<body onload="startApp()">
 <header id="menu" class="menu">
     <a href="#" id="linkHome" class="menu-item" >Home</a>
     <a href="#" id="linkLogin" class="menu-item">Login</a>
@@ -111,9 +111,6 @@
             <div><input type="button" id="buttonEditAd" value="Edit" /></div>
         </form>
     </section>
-    <script>
-        startApp();
-    </script>
 </main>
 <footer>Prodavachnik - Simple SPA Application</footer>
 </body>
